@@ -1,0 +1,21 @@
+{
+  "name": "learn-whisper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "langchain": "^0.1.37",
+    "nodemon": "^3.1.0",
+    "openai": "^4.47.1"
+  }
+}
