@@ -27,7 +27,7 @@ export const langChainWhisper = async (req, res) => {
     const filePath = "testing.mp3";
     const loader = new OpenAIWhisperAudio(filePath);
     const docs = await loader.load();
-    res.send({ result: docs });
+    res.send({ result: docs[0] });
   } catch (error) {
     res.send({ message: error.message });
     console.log("🚀 ~ langChainWhisper ~ error:", error);
